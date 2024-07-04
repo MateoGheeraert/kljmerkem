@@ -5,7 +5,13 @@ header {
 .activiteiten {
     display: flex;
     overflow-x: auto;
-    white-space: nowrap;
+    flex-wrap: nowrap;
     height: 700px;
+    margin: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+    cursor: pointer;
+    user-select: none;
 }
+
 
