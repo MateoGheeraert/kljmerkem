@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/kljmerkem/" element={<Home />}></Route>
-        <Route path="kljmerkem/activiteiten" element={<Activiteiten />}></Route>
+        <Route path="/kljmerkem/activiteiten" element={<Activiteiten />}></Route>
       </Routes>
     </BrowserRouter>
     </Layout>

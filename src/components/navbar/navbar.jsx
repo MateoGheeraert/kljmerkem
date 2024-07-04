@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/kljmerkem/">
           <img src={logo} alt="Logo" style={{ width: 60 }} />
         </a>
         <button
@@ -25,27 +25,27 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="/kljmerkem/">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/activiteiten">
+              <a className="nav-link" href="/kljmerkem/activiteiten">
                 Activiteiten
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/fotos">
+              <a className="nav-link" href="/kljmerkem/fotos">
                 Foto's
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/evenementen">
+              <a className="nav-link" href="/kljmerkem/evenementen">
                 Evenementen
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/bestuur">
+              <a className="nav-link" href="/kljmerkem/bestuur">
                 Bestuur
               </a>
             </li>
