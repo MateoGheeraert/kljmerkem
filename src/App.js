@@ -6,14 +6,14 @@ import Activiteiten from './pages/activiteiten';
 
 const App = () => {
   return (
-    <Layout>
-      <HashRouter basename="/kljmerkem">
+    <HashRouter basename="/kljmerkem">
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/activiteiten" element={<Activiteiten />} />
         </Routes>
-      </HashRouter>
-    </Layout>
+      </Layout>
+    </HashRouter>
   );
 };
 
