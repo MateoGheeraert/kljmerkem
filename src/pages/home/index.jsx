@@ -39,18 +39,34 @@ const Home = () => {
           <span className="carousel-control-next-icon"></span>
         </button>
       </div>
-      <div class="over mx-auto">
+      <div class="over mx-auto flyinleft">
         <h2>Over</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Welkom bij KLJ Merkem!
+          <br /> KLJ-Merkem is sinds 1932 the place to be om je vanaf je 16 jaar
+          rot te amuseren. KLJ staat voor Katholieke Landelijke Jeugd, onze
+          groep is een toonbeeld van openheid, kameraadschap, vriendschap en
+          hier en daar ook wel een brigand. Naar de regel komen we tweewekelijks
+          samen op de vrijdag voor sport, spel en ontspanning. Via deze site ben
+          je altijd in staat om je te informeren over de komende activiteiten,
+          de foto’s, ons bestuur, waar je ons kan vinden, onze sponsors en onze
+          fuiven.
+        </p>
+        <p>
+          <b>Lidmaatschap</b>
+          <br />
+          Ben jij toevallig een jongen/meisje, en word je 16 jaar dit jaar of
+          ben je ouder, dan ben je zeker welkom in onze KLJ! Inschrijven kan tot
+          je 35 jaar bent voor een jaarlijks bedrag van €20. Dit bedrag geldt
+          louter als verzekeringsbijdrage. Heb je al een vriend/vriendin of
+          kennis in de KLJ? Heb je al van ons gehoord? Of heb je gewoon een
+          groot aantal vrijdagen waarop je niets kunt inplannen, NEEM dan maar
+          gerust contact op met ons. Dit kan telefonisch via een bestuurslid,
+          via het contactformulier of kom gerust maar eens binnen. We
+          organiseren alsook een startactiviteit in September, waar een groot
+          aantal geïnteresseerden eens langskomen om kennis te maken met ons.{" "}
+          <br />
+          WIJ HOPEN JE DUS ZEKER TE MOGEN VERWELKOMEN IN ONZE VRIENDENGROEP!!
         </p>
       </div>
     </div>

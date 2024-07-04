@@ -5,6 +5,8 @@ import Home from './pages/home';
 import Activiteiten from './pages/activiteiten';
 import Fotos from './pages/fotos';
 import Evenementen from './pages/evenementen';
+import Bestuur from './pages/bestuur';
+import './App.css'
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
             <Route path="/activiteiten" element={<Activiteiten />} />
             <Route path="/fotos" element={<Fotos />} />
             <Route path="/evenementen" element={<Evenementen />} />
+            <Route path="/bestuur" element={<Bestuur />} />
           </Routes>
         </Layout>
     </HashRouter>

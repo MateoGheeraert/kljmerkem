@@ -25,3 +25,9 @@
     text-align: center;
     width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+    .over {
+      width: 90%;
+    }
+  }

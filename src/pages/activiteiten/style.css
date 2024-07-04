@@ -6,7 +6,7 @@ header {
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
-    height: 700px;
+    height: 800px;
     margin: 20px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; 

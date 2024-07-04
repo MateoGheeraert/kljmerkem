@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const Navbar = () => {
   return (
@@ -25,28 +26,37 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
+            <li className="nav-item mx-3">
+              <Link className="nav-link hover-underline-animation" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/activiteiten">
+            <li className="nav-item mx-3">
+              <Link
+                className="nav-link hover-underline-animation"
+                to="/activiteiten"
+              >
                 Activiteiten
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/fotos">
+            <li className="nav-item mx-3">
+              <Link className="nav-link hover-underline-animation" to="/fotos">
                 Foto's
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/evenementen">
+            <li className="nav-item mx-3">
+              <Link
+                className="nav-link hover-underline-animation"
+                to="/evenementen"
+              >
                 Evenementen
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/bestuur">
+            <li className="nav-item mx-3">
+              <Link
+                className="nav-link hover-underline-animation"
+                to="/bestuur"
+              >
                 Bestuur
               </Link>
             </li>

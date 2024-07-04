@@ -1,0 +1,13 @@
+.flyinleft {
+    animation-name: flyin;
+    animation-duration: 1s;
+  }
+  
+  @keyframes flyin {
+    0%   { 
+    transform: translateX(-200%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
