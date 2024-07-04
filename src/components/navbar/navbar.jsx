@@ -1,13 +1,14 @@
 import React from "react";
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm bg-light navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/kljmerkem/">
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="Logo" style={{ width: 60 }} />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,29 +26,29 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="/kljmerkem/">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/kljmerkem/activiteiten">
+              <Link className="nav-link" to="/activiteiten">
                 Activiteiten
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/kljmerkem/fotos">
+              <Link className="nav-link" to="/fotos">
                 Foto's
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/kljmerkem/evenementen">
+              <Link className="nav-link" to="/evenementen">
                 Evenementen
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/kljmerkem/bestuur">
+              <Link className="nav-link" to="/bestuur">
                 Bestuur
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
