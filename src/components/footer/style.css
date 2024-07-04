@@ -1,0 +1,28 @@
+footer {
+    padding-top: 30px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    margin-bottom: 0;
+    bottom: 0;
+    top: 100%;
+}
+
+footer ul {
+    list-style-type: none;;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: lightgray;
+}

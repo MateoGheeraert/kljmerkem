@@ -1,0 +1,11 @@
+header {
+    text-align: center;
+}
+
+.activiteiten {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 700px;
+}
+
