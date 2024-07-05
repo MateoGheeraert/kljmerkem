@@ -13,8 +13,12 @@ footer ul {
     list-style-type: none;;
 }
 
+footer li {
+    margin-top: 15px;
+}
 footer img {
     margin-right: 10px;
+    
 }
 
 footer a {

@@ -44,11 +44,15 @@ const Footer = () => {
         </div>
         <div>
           <p>
+            <b>Contact</b>
+          </p>
+          <p>
             Kouterstraat 26b <br /> 8650 Merkem
           </p>
+          <p>kljmerkem1@hotmail.com</p>
         </div>
       </div>
-      <p style={{ textAlign: "right" }}>
+      <p style={{ textAlign: "right", marginRight: "15px" }}>
         All rights reserved to KLJ Merkem &copy; 2024
       </p>
     </footer>
