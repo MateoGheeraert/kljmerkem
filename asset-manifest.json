@@ -1,30 +1,41 @@
 {
   "files": {
-    "main.css": "/kljmerkem/static/css/main.56d80108.css",
-    "main.js": "/kljmerkem/static/js/main.95d9c646.js",
+    "main.css": "/kljmerkem/static/css/main.57dd4299.css",
+    "main.js": "/kljmerkem/static/js/main.1bb63f4c.js",
     "static/js/453.e2b6168c.chunk.js": "/kljmerkem/static/js/453.e2b6168c.chunk.js",
+    "static/media/simon.jpg": "/kljmerkem/static/media/simon.333b3c5c9aa9d367c47a.jpg",
+    "static/media/Cassie.jpg": "/kljmerkem/static/media/Cassie.0acc244372c599db01b4.jpg",
+    "static/media/tafelvoetbal.jpg": "/kljmerkem/static/media/tafelvoetbal.81a01d6ecb9c7c9bf041.jpg",
     "static/media/groepsfoto.jpg": "/kljmerkem/static/media/groepsfoto.6b1284dcd30967fe02ea.jpg",
+    "static/media/Rosalie.jpg": "/kljmerkem/static/media/Rosalie.2d9e428d2cb70bcabef9.jpg",
     "static/media/groepsfoto2.jpg": "/kljmerkem/static/media/groepsfoto2.f27be73c0e753496c03e.jpg",
+    "static/media/paintball.jpg": "/kljmerkem/static/media/paintball.c9527622633493967375.jpg",
     "static/media/foto6.jpg": "/kljmerkem/static/media/foto6.c334d8dd896e6cfd3135.jpg",
     "static/media/foto4.jpg": "/kljmerkem/static/media/foto4.eaa193e0c508b0bb6cb4.jpg",
     "static/media/foto3.jpg": "/kljmerkem/static/media/foto3.b5e8fdf673f434150170.jpg",
+    "static/media/bierfietsen.jpg": "/kljmerkem/static/media/bierfietsen.a57184f62677dd7831c0.jpg",
     "static/media/foto5.jpg": "/kljmerkem/static/media/foto5.331f1b984f96e052eea7.jpg",
     "static/media/logo.png": "/kljmerkem/static/media/logo.96bf190559a774ae1738.png",
     "static/media/dollekoe.jpg": "/kljmerkem/static/media/dollekoe.608493970de31b32cd61.jpg",
     "static/media/kljcafé.jpg": "/kljmerkem/static/media/kljcafé.874634a78061825a5603.jpg",
+    "static/media/Kelly.jpg": "/kljmerkem/static/media/Kelly.82d43fac7fc255ca5d6a.jpg",
     "static/media/foto2.jpg": "/kljmerkem/static/media/foto2.6f03ba5c76d0af72a827.jpg",
+    "static/media/bowling.jpg": "/kljmerkem/static/media/bowling.0da176566b5a12823211.jpg",
     "static/media/foto1.jpg": "/kljmerkem/static/media/foto1.c046aa058cac80e13b0d.jpg",
+    "static/media/mateo.jpg": "/kljmerkem/static/media/mateo.be658c606550cca7409a.jpg",
+    "static/media/muurklimmen.jpg": "/kljmerkem/static/media/muurklimmen.a0c7567df6de31357c77.jpg",
     "static/media/barbecue.jpg": "/kljmerkem/static/media/barbecue.caea15048e735751a037.jpg",
     "static/media/tiktok.png": "/kljmerkem/static/media/tiktok.684547573a28c1c65645.png",
     "static/media/insta.png": "/kljmerkem/static/media/insta.e719d8b29f452a16302d.png",
+    "static/media/Ferre.jpg": "/kljmerkem/static/media/Ferre.6d4586d0fbf740b0d3e1.jpg",
     "static/media/fb.png": "/kljmerkem/static/media/fb.4f037d961598aff2a0a4.png",
     "index.html": "/kljmerkem/index.html",
-    "main.56d80108.css.map": "/kljmerkem/static/css/main.56d80108.css.map",
-    "main.95d9c646.js.map": "/kljmerkem/static/js/main.95d9c646.js.map",
+    "main.57dd4299.css.map": "/kljmerkem/static/css/main.57dd4299.css.map",
+    "main.1bb63f4c.js.map": "/kljmerkem/static/js/main.1bb63f4c.js.map",
     "453.e2b6168c.chunk.js.map": "/kljmerkem/static/js/453.e2b6168c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56d80108.css",
-    "static/js/main.95d9c646.js"
+    "static/css/main.57dd4299.css",
+    "static/js/main.1bb63f4c.js"
   ]
 }
