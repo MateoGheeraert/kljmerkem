@@ -40,33 +40,29 @@ const Home = () => {
         </button>
       </div>
       <div class="over mx-auto flyinleft">
-        <h2>Over</h2>
+        <h2>Over Ons</h2>
         <p>
-          Welkom bij KLJ Merkem!
-          <br /> KLJ-Merkem is sinds 1932 the place to be om je vanaf je 16 jaar
-          rot te amuseren. KLJ staat voor Katholieke Landelijke Jeugd, onze
-          groep is een toonbeeld van openheid, kameraadschap, vriendschap en
-          hier en daar ook wel een brigand. Naar de regel komen we tweewekelijks
-          samen op de vrijdag voor sport, spel en ontspanning. Via deze site ben
-          je altijd in staat om je te informeren over de komende activiteiten,
-          de foto’s, ons bestuur, waar je ons kan vinden, onze sponsors en onze
-          fuiven.
+          Welkom bij KLJ Merkem! Sinds 1932 zijn wij de ideale plek voor
+          jongeren vanaf 16 jaar om zich te vermaken en nieuwe vrienden te
+          maken. KLJ, wat staat voor Katholieke Landelijke Jeugd, is een plek
+          waar openheid, kameraadschap en plezier centraal staan. Elke twee
+          weken komen we op vrijdag samen voor sport, spel en ontspanning. Via
+          onze website blijf je altijd op de hoogte van de komende activiteiten,
+          foto’s, ons bestuur, locatie, sponsors en onze fuiven.
         </p>
         <p>
-          <b>Lidmaatschap</b>
+          <strong>Lidmaatschap</strong>
           <br />
-          Ben jij toevallig een jongen/meisje, en word je 16 jaar dit jaar of
-          ben je ouder, dan ben je zeker welkom in onze KLJ! Inschrijven kan tot
-          je 35 jaar bent voor een jaarlijks bedrag van €20. Dit bedrag geldt
-          louter als verzekeringsbijdrage. Heb je al een vriend/vriendin of
-          kennis in de KLJ? Heb je al van ons gehoord? Of heb je gewoon een
-          groot aantal vrijdagen waarop je niets kunt inplannen, NEEM dan maar
-          gerust contact op met ons. Dit kan telefonisch via een bestuurslid,
-          via het contactformulier of kom gerust maar eens binnen. We
-          organiseren alsook een startactiviteit in September, waar een groot
-          aantal geïnteresseerden eens langskomen om kennis te maken met ons.{" "}
+          Ben jij 16 jaar of ouder? Dan ben je van harte welkom bij KLJ Merkem!
+          Het lidmaatschap kost slechts €20 per jaar, wat enkel dient als
+          verzekeringsbijdrage. Of je nu al vrienden bij ons hebt, eerder van
+          ons hebt gehoord, of gewoon nieuwsgierig bent, je bent altijd welkom
+          om langs te komen tijdens een van onze activiteiten. Je kunt ons
+          bereiken via een bestuurslid, het contactformulier, of gewoon spontaan
+          binnenwandelen. We organiseren ook een startactiviteit in september,
+          waar je de kans krijgt om kennis te maken met onze groep.
           <br />
-          WIJ HOPEN JE DUS ZEKER TE MOGEN VERWELKOMEN IN ONZE VRIENDENGROEP!!
+          We hopen je snel te mogen verwelkomen in onze gezellige vriendenkring!
         </p>
       </div>
     </div>

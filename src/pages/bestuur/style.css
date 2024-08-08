@@ -1,0 +1,19 @@
+.bestuur {
+    padding: 0 15px; /* Add padding if needed */
+  }
+  
+  .bestuursleden {
+    margin-top: 5%;
+    display: flex;
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .bestuurslid {
+    display: flex;
+    flex-direction: column; /* Ensure profile info is stacked vertically */
+    align-items: center; /* Center content within each bestuurslid */
+    width: 300px; /* Fixed width for each bestuurslid, adjust as needed */
+  }
+  

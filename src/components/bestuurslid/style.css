@@ -1,0 +1,46 @@
+.bestuurslid {
+    display: flex;
+    flex-direction: column; /* Stack profile info vertically */
+    align-items: center; /* Center content horizontally */
+    width: 300px; /* Fixed width for each item, adjust as needed */
+    margin: 80px auto 0 auto; /* Center horizontally and add top margin */
+    position: relative; /* Ensure positioning context for child elements */
+}
+
+.titel {
+    font-weight: bold;
+}
+
+.waarde {
+    text-indent: 10px;
+}
+
+.profielfoto {
+    border-radius: 50%;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    position: absolute;
+    top: -80px; /* Adjust to overlap correctly with the profile info */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border: 5px solid white; /* Border effect for the circle */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1; /* Ensure image is above the white box */
+}
+
+.profile-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: white;
+    border-radius: 10px; /* Optional: add rounded corners */
+    position: relative;
+    margin-top: 100px; /* Space for profile picture overlap */
+    max-width: 300px;
+    text-align: center; /* Center text within the box */
+}

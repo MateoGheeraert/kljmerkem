@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
-import groepsfoto from "../../images/groepsfoto.jpg";
 
-const Activiteit = ({ header, body }) => {
+const Activiteit = ({ header, body, foto }) => {
   return (
     <div className="card">
-      <img className="card-img-top" alt="KLJ Merkem" src={groepsfoto} />
+      <img className="card-img-top" alt="KLJ Merkem" src={foto} />
       <div className="card-header">{header}</div>
       <div className="card-body">
         <p className="card-text">{body}</p>

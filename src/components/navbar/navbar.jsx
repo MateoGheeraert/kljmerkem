@@ -55,6 +55,14 @@ const Navbar = () => {
             <li className="nav-item mx-3">
               <Link
                 className="nav-link hover-underline-animation"
+                to="/geschiedenis"
+              >
+                Geschiedenis
+              </Link>
+            </li>
+            <li className="nav-item mx-3">
+              <Link
+                className="nav-link hover-underline-animation"
                 to="/bestuur"
               >
                 Bestuur

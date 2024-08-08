@@ -7,10 +7,11 @@ import Fotos from './pages/fotos';
 import Evenementen from './pages/evenementen';
 import Bestuur from './pages/bestuur';
 import './App.css'
+import Geschiedenis from './pages/geschiedenis';
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename="">
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/fotos" element={<Fotos />} />
             <Route path="/evenementen" element={<Evenementen />} />
             <Route path="/bestuur" element={<Bestuur />} />
+            <Route path="/geschiedenis" element={<Geschiedenis />} />
           </Routes>
         </Layout>
     </HashRouter>

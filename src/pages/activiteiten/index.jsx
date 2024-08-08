@@ -1,6 +1,12 @@
 import React, { useRef, useState } from "react";
 import Activiteit from "../../components/activiteit/activiteit";
 import "./style.css";
+import bierfietsen from "../../images/activiteiten/bierfietsen.jpg";
+import bowling from "../../images/activiteiten/bowling.jpg";
+import muurklimmen from "../../images/activiteiten/muurklimmen.jpg";
+import tafelvoetbal from "../../images/activiteiten/tafelvoetbal.jpg";
+import paintball from "../../images/activiteiten/paintball.jpg";
+import schieting from "../../images/groepsfoto.jpg";
 
 const Activiteiten = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -37,63 +43,41 @@ const Activiteiten = () => {
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
       >
-        <Activiteit header="karten" body="We zijn gaan karten." />
-        <Activiteit header="paintball" body="We zijn gaan paintballen." />
         <Activiteit
-          header="muurklimmen"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum."
+          header="Karten"
+          body="Samen racen we vol adrenaline over het circuit. Karten versterkt onze vriendschap en zorgt altijd voor veel gelach en gezonde competitie."
+          foto={muurklimmen}
         />
-        <Activiteit header="karten" body="We zijn gaan karten." />
-        <Activiteit header="paintball" body="We zijn gaan paintballen." />
         <Activiteit
-          header="muurklimmen"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum."
+          header="Paintball"
+          body="Tijdens het paintballen beleven we spannende avonturen en werken we als een hecht team samen. Dit is een van onze favoriete activiteiten om onze banden te versterken."
+          foto={paintball}
         />
-        <Activiteit header="karten" body="We zijn gaan karten." />
-        <Activiteit header="paintball" body="We zijn gaan paintballen." />
         <Activiteit
-          header="muurklimmen"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum."
+          header="Muurklimmen"
+          body="Samen trotseren we hoogtes en ondersteunen we elkaar bij elke stap. Muurklimmen brengt ons dichter bij elkaar terwijl we onze grenzen verleggen."
+          foto={muurklimmen}
         />
-        <Activiteit header="karten" body="We zijn gaan karten." />
-        <Activiteit header="paintball" body="We zijn gaan paintballen." />
         <Activiteit
-          header="muurklimmen"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum."
+          header="Levend Tafelvoetbal"
+          body="Met levend tafelvoetbal beleven we hilarische momenten. Het versterkt onze teamgeest en zorgt altijd voor een geweldige tijd vol plezier."
+          foto={tafelvoetbal}
         />
-        {/* Add more Activiteit components as needed */}
+        <Activiteit
+          header="Bowling"
+          body="Bowlen met de groep is altijd een schot in de roos! We genieten van de competitie en het samen zijn, wat onze vriendschappen versterkt."
+          foto={bowling}
+        />
+        <Activiteit
+          header="Bierfietsen"
+          body="Op de bierfiets genieten we van heerlijke drankjes en nog betere gesprekken. Deze activiteit is perfect voor het versterken van onze hechte band."
+          foto={bierfietsen}
+        />
+        <Activiteit
+          header="Schieting"
+          body="Tijdens de schieting hebben we onze precisie en concentratie getest. Het was een geweldige gelegenheid om onze focus te verbeteren en te genieten van een spannende uitdaging. Elk schot bracht een gevoel van voldoening en plezier, en het was een unieke ervaring die ons allemaal bij zal blijven."
+          foto={schieting} // Zorg ervoor dat je een afbeelding toevoegt die bij deze activiteit past
+        />
       </div>
     </div>
   );
