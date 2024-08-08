@@ -38,7 +38,7 @@ const Bestuur = () => {
         ></Bestuurslid>
         <Bestuurslid
           naam="Michiel Castryck"
-          taken="Berging Verantwoordelijke, Secretaris"
+          taken="Secretaris"
           geboortedatum="12/03/2004"
           telefoon="0499623063"
           foto={cassie}

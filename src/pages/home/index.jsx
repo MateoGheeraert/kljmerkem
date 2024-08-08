@@ -1,6 +1,7 @@
 import React from "react";
 import groepsfoto from "../../images/groepsfoto.jpg";
 import groepsfoto2 from "../../images/groepsfoto2.jpg";
+import groepsfoto3 from "../../images/groepsfoto3.png";
 import "./style.css";
 
 const Home = () => {
@@ -9,13 +10,19 @@ const Home = () => {
       <div id="demo" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={groepsfoto} alt="Los Angeles" className="d-block w-100" />
+            <img src={groepsfoto3} alt="KLJ Merkem" className="d-block w-100" />
             <div className="carousel-caption d-none d-md-block">
               <h1>KLJ Merkem</h1>
             </div>
           </div>
           <div className="carousel-item">
-            <img src={groepsfoto2} alt="Chicago" className="d-block w-100" />
+            <img src={groepsfoto2} alt="KLJ Merkem" className="d-block w-100" />
+            <div className="carousel-caption d-none d-md-block">
+              <h1>KLJ Merkem</h1>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src={groepsfoto} alt="KLJ Merkem" className="d-block w-100" />
             <div className="carousel-caption d-none d-md-block">
               <h1>KLJ Merkem</h1>
             </div>
@@ -54,13 +61,13 @@ const Home = () => {
           <strong>Lidmaatschap</strong>
           <br />
           Ben jij 16 jaar of ouder? Dan ben je van harte welkom bij KLJ Merkem!
-          Het lidmaatschap kost slechts €20 per jaar, wat enkel dient als
+          Het lidmaatschap kost slechts €25 per jaar, wat enkel dient als
           verzekeringsbijdrage. Of je nu al vrienden bij ons hebt, eerder van
           ons hebt gehoord, of gewoon nieuwsgierig bent, je bent altijd welkom
           om langs te komen tijdens een van onze activiteiten. Je kunt ons
-          bereiken via een bestuurslid, het contactformulier, of gewoon spontaan
-          binnenwandelen. We organiseren ook een startactiviteit in september,
-          waar je de kans krijgt om kennis te maken met onze groep.
+          bereiken via een bestuurslid of gewoon spontaan binnenwandelen. We
+          organiseren ook een startactiviteit in september, waar je de kans
+          krijgt om kennis te maken met onze groep.
           <br />
           We hopen je snel te mogen verwelkomen in onze gezellige vriendenkring!
         </p>
