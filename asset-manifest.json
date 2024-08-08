@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/kljmerkem/static/css/main.57dd4299.css",
-    "main.js": "/kljmerkem/static/js/main.1bb63f4c.js",
+    "main.css": "/kljmerkem/static/css/main.f85fc46e.css",
+    "main.js": "/kljmerkem/static/js/main.c633e60a.js",
     "static/js/453.e2b6168c.chunk.js": "/kljmerkem/static/js/453.e2b6168c.chunk.js",
+    "static/media/groepsfoto3.png": "/kljmerkem/static/media/groepsfoto3.7f2728a68983434a22d6.png",
     "static/media/simon.jpg": "/kljmerkem/static/media/simon.333b3c5c9aa9d367c47a.jpg",
     "static/media/Cassie.jpg": "/kljmerkem/static/media/Cassie.0acc244372c599db01b4.jpg",
     "static/media/tafelvoetbal.jpg": "/kljmerkem/static/media/tafelvoetbal.81a01d6ecb9c7c9bf041.jpg",
@@ -30,12 +31,12 @@
     "static/media/Ferre.jpg": "/kljmerkem/static/media/Ferre.6d4586d0fbf740b0d3e1.jpg",
     "static/media/fb.png": "/kljmerkem/static/media/fb.4f037d961598aff2a0a4.png",
     "index.html": "/kljmerkem/index.html",
-    "main.57dd4299.css.map": "/kljmerkem/static/css/main.57dd4299.css.map",
-    "main.1bb63f4c.js.map": "/kljmerkem/static/js/main.1bb63f4c.js.map",
+    "main.f85fc46e.css.map": "/kljmerkem/static/css/main.f85fc46e.css.map",
+    "main.c633e60a.js.map": "/kljmerkem/static/js/main.c633e60a.js.map",
     "453.e2b6168c.chunk.js.map": "/kljmerkem/static/js/453.e2b6168c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57dd4299.css",
-    "static/js/main.1bb63f4c.js"
+    "static/css/main.f85fc46e.css",
+    "static/js/main.c633e60a.js"
   ]
 }
