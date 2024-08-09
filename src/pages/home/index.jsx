@@ -52,16 +52,16 @@ const Home = () => {
           Welkom bij KLJ Merkem! Sinds 1932 zijn wij de ideale plek voor
           jongeren vanaf 16 jaar om zich te vermaken en nieuwe vrienden te
           maken. KLJ, wat staat voor Katholieke Landelijke Jeugd, is een plek
-          waar openheid, kameraadschap en plezier centraal staan. Elke twee
-          weken komen we op vrijdag samen voor sport, spel en ontspanning. Via
+          waar openheid, kameraadschap en plezier centraal staan. Bijna elke
+          week komen we op vrijdag samen voor sport, spel en ontspanning. Via
           onze website blijf je altijd op de hoogte van de komende activiteiten,
-          foto’s, ons bestuur, locatie, sponsors en onze fuiven.
+          foto’s, ons bestuur, locatie en onze evenementen.
         </p>
         <p>
           <strong>Lidmaatschap</strong>
           <br />
           Ben jij 16 jaar of ouder? Dan ben je van harte welkom bij KLJ Merkem!
-          Het lidmaatschap kost slechts €25 per jaar, wat enkel dient als
+          Het lidmaatschap kost slechts €26 per jaar, wat enkel dient als
           verzekeringsbijdrage. Of je nu al vrienden bij ons hebt, eerder van
           ons hebt gehoord, of gewoon nieuwsgierig bent, je bent altijd welkom
           om langs te komen tijdens een van onze activiteiten. Je kunt ons
