@@ -10,7 +10,7 @@ import foto6 from "../../images/fotos/foto6.jpg";
 const Fotos = () => {
   return (
     <div className="container mt-5 flyinleft">
-      <h1 className="text-center mb-5">Gallerij</h1>
+      <h1 className="text-center mb-5">Galerij</h1>
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
           <a

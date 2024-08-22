@@ -17,7 +17,7 @@ const Bestuur = () => {
       <div className="bestuursleden flyinleft">
         <Bestuurslid
           naam="Mateo Gheeraert"
-          taken="voorzitter"
+          taken="Voorzitter"
           geboortedatum="23/01/2004"
           telefoon="0478751599"
           foto={mateo}
