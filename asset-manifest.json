@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f85fc46e.css",
-    "main.js": "/static/js/main.fdabd503.js",
+    "main.js": "/static/js/main.49aea6c2.js",
     "static/js/453.e2b6168c.chunk.js": "/static/js/453.e2b6168c.chunk.js",
     "static/media/groepsfoto3.png": "/static/media/groepsfoto3.7f2728a68983434a22d6.png",
     "static/media/simon.jpg": "/static/media/simon.333b3c5c9aa9d367c47a.jpg",
@@ -21,22 +21,23 @@
     "static/media/kljcafé.jpg": "/static/media/kljcafé.874634a78061825a5603.jpg",
     "static/media/Kelly.jpg": "/static/media/Kelly.82d43fac7fc255ca5d6a.jpg",
     "static/media/foto2.jpg": "/static/media/foto2.6f03ba5c76d0af72a827.jpg",
+    "static/media/barbecue.jpg": "/static/media/barbecue.586dec04cf30270b82f4.jpg",
     "static/media/bowling.jpg": "/static/media/bowling.0da176566b5a12823211.jpg",
     "static/media/foto1.jpg": "/static/media/foto1.c046aa058cac80e13b0d.jpg",
     "static/media/mateo.jpg": "/static/media/mateo.be658c606550cca7409a.jpg",
     "static/media/muurklimmen.jpg": "/static/media/muurklimmen.a0c7567df6de31357c77.jpg",
-    "static/media/barbecue.jpg": "/static/media/barbecue.caea15048e735751a037.jpg",
     "static/media/tiktok.png": "/static/media/tiktok.684547573a28c1c65645.png",
     "static/media/insta.png": "/static/media/insta.e719d8b29f452a16302d.png",
     "static/media/Ferre.jpg": "/static/media/Ferre.6d4586d0fbf740b0d3e1.jpg",
+    "static/media/backer.jpg": "/static/media/backer.972f7789b203333622fd.jpg",
     "static/media/fb.png": "/static/media/fb.4f037d961598aff2a0a4.png",
     "index.html": "/index.html",
     "main.f85fc46e.css.map": "/static/css/main.f85fc46e.css.map",
-    "main.fdabd503.js.map": "/static/js/main.fdabd503.js.map",
+    "main.49aea6c2.js.map": "/static/js/main.49aea6c2.js.map",
     "453.e2b6168c.chunk.js.map": "/static/js/453.e2b6168c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f85fc46e.css",
-    "static/js/main.fdabd503.js"
+    "static/js/main.49aea6c2.js"
   ]
 }
