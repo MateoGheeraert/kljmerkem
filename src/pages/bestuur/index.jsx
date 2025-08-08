@@ -1,13 +1,13 @@
-import React from 'react';
-import './style.css';
-import Bestuurslid from '../../components/bestuurslid/bestuurslid';
-import mateo from '../../images/bestuur/mateo.jpg';
-import cassie from '../../images/bestuur/Cassie.jpg';
-import ferre from '../../images/bestuur/Ferre.jpg';
-import kelly from '../../images/bestuur/Kelly.jpg';
-import rosalie from '../../images/bestuur/Rosalie.jpg';
-import simon from '../../images/bestuur/simon.jpg';
-import backer from '../../images/bestuur/backer.jpg';
+import React from "react";
+import "./style.css";
+import Bestuurslid from "../../components/bestuurslid/bestuurslid";
+import mateo from "../../images/bestuur/mateo.jpg";
+import cassie from "../../images/bestuur/Cassie.jpg";
+import ferre from "../../images/bestuur/Ferre.jpg";
+import kelly from "../../images/bestuur/Kelly.jpg";
+import rosalie from "../../images/bestuur/Rosalie.jpg";
+import simon from "../../images/bestuur/simon.jpg";
+import backer from "../../images/bestuur/backer.jpg";
 
 const Bestuur = () => {
   return (
@@ -50,13 +50,6 @@ const Bestuur = () => {
           geboortedatum='25/04/2003'
           telefoon='0470432809'
           foto={simon}
-        ></Bestuurslid>
-        <Bestuurslid
-          naam='Kelly Dezwarte'
-          taken='PR'
-          geboortedatum='07/09/2004'
-          telefoon='0472594699'
-          foto={kelly}
         ></Bestuurslid>
         <Bestuurslid
           naam='Rosalie Capoen'
