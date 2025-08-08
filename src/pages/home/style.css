@@ -1,33 +1,36 @@
 .carousel img {
-    max-height: 800px;
+  max-height: 800px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousel-caption {
-    position: absolute;
-    top: 45%;
-    font-weight: bolder;
-    width: 40%;
-    margin-right: auto;
-    margin-left: auto;
+  position: absolute;
+  top: 45%;
+  font-weight: bolder;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .carousel-caption h1 {
-    font-size: 4rem;
-    color: #fff;
-    font-weight: bold;
-    border: 10px solid rgba(255, 255, 255, 0.6);
-    padding: 10px 20px;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  border: 10px solid rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
 }
 
 .over {
-    margin-top: 40px;
-    font-size: large;
-    text-align: center;
-    width: 50%;
+  margin-top: 40px;
+  font-size: large;
+  text-align: center;
+  width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-    .over {
-      width: 90%;
-    }
+  .over {
+    width: 90%;
   }
+}
