@@ -4,7 +4,6 @@ import Bestuurslid from "../../components/bestuurslid/bestuurslid";
 import mateo from "../../images/bestuur/mateo.jpg";
 import cassie from "../../images/bestuur/Cassie.jpg";
 import ferre from "../../images/bestuur/Ferre.jpg";
-import kelly from "../../images/bestuur/Kelly.jpg";
 import rosalie from "../../images/bestuur/Rosalie.jpg";
 import simon from "../../images/bestuur/simon.jpg";
 import backer from "../../images/bestuur/backer.jpg";
