@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./style.css";
 import Bestuurslid from "../../components/bestuurslid/bestuurslid";
 import mateo from "../../images/bestuur/mateo.jpg";
@@ -11,8 +12,29 @@ import backer from "../../images/bestuur/backer.jpg";
 const Bestuur = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bestuur KLJ Merkem - Contactgegevens Jeugdbeweging Merkem</title>
+        <meta
+          name='description'
+          content='Leer het bestuur van KLJ Merkem kennen! Contactgegevens van de bestuursleden van jeugdbeweging Merkem. Voorzitter, kassier, secretaris en meer.'
+        />
+        <meta
+          name='keywords'
+          content='KLJ Merkem bestuur, bestuur jeugdbeweging Merkem, contact KLJ Merkem, bestuursleden Merkem, voorzitter KLJ Merkem'
+        />
+        <link rel='canonical' href='https://kljmerkem.be/#/bestuur' />
+        <meta
+          property='og:title'
+          content='Bestuur KLJ Merkem - Contactgegevens'
+        />
+        <meta
+          property='og:description'
+          content='Leer het bestuur van KLJ Merkem kennen! Contactgegevens van de bestuursleden.'
+        />
+        <meta property='og:url' content='https://kljmerkem.be/#/bestuur' />
+      </Helmet>
       <div>
-        <h1 className='text-center'>Bestuur</h1>
+        <h1 className='text-center'>Bestuur KLJ Merkem</h1>
       </div>
       <div className='bestuursleden flyinleft'>
         <Bestuurslid

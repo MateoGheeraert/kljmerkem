@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Activiteit from "../../components/activiteit/activiteit";
 import "./style.css";
 import bierfietsen from "../../images/activiteiten/bierfietsen.jpg";
@@ -31,9 +32,36 @@ const Activiteiten = () => {
 
   return (
     <div className='home-page'>
+      <Helmet>
+        <title>
+          Activiteiten KLJ Merkem - Karten | Paintball | Muurklimmen | Bowling |
+          Bierfietsen
+        </title>
+        <meta
+          name='description'
+          content='Ontdek de leuke activiteiten van KLJ Merkem: karten, paintball, muurklimmen, bowling, bierfietsen en meer! Jeugdactiviteiten in Merkem voor 16+.'
+        />
+        <meta
+          name='keywords'
+          content='KLJ Merkem activiteiten, karten Merkem, paintball, muurklimmen, bowling, bierfietsen, jeugdactiviteiten Merkem, sport Merkem, recreatie'
+        />
+        <link rel='canonical' href='https://kljmerkem.be/#/activiteiten' />
+        <meta
+          property='og:title'
+          content='Activiteiten KLJ Merkem - Sport en Ontspanning'
+        />
+        <meta
+          property='og:description'
+          content='Ontdek de leuke activiteiten van KLJ Merkem: karten, paintball, muurklimmen en meer!'
+        />
+        <meta property='og:url' content='https://kljmerkem.be/#/activiteiten' />
+      </Helmet>
       <header>
-        <h1>Onze activiteiten</h1>
-        <p>Hier vind je enkele van onze activiteiten terug!</p>
+        <h1>Activiteiten KLJ Merkem</h1>
+        <p>
+          Hier vind je enkele van onze activiteiten van de jeugdbeweging KLJ
+          Merkem terug!
+        </p>
       </header>
       <div
         className='activiteiten'

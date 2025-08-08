@@ -1,6 +1,7 @@
 {
-  "short_name": "KLJ Merkem web",
-  "name": "Website van KLJ Merkem",
+  "short_name": "KLJ Merkem",
+  "name": "KLJ Merkem - Katholieke Landelijke Jeugd Merkem",
+  "description": "Jeugdbeweging KLJ Merkem voor jongeren vanaf 16 jaar in Merkem",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,22 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0028ca",
+  "background_color": "#ffffff",
+  "lang": "nl",
+  "categories": ["social", "lifestyle", "sports"],
+  "scope": "/",
+  "orientation": "portrait-primary"
 }

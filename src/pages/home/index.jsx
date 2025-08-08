@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import groepsfoto from "../../images/groepsfotos/groepsfoto5.jpg";
 import groepsfoto2 from "../../images/groepsfotos/groepsfoto2.jpg";
 import groepsfoto3 from "../../images/groepsfotos/groepsfoto3.png";
@@ -7,6 +8,30 @@ import "./style.css";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          KLJ Merkem - Katholieke Landelijke Jeugd Merkem | Jeugdbeweging voor
+          jongeren 16+
+        </title>
+        <meta
+          name='description'
+          content='KLJ Merkem is dé jeugdbeweging voor jongeren vanaf 16 jaar in Merkem. Sport, spel en activiteiten elke vrijdag. Organiseert Nacht Van De Dolle Koe.'
+        />
+        <meta
+          name='keywords'
+          content='KLJ Merkem, Jeugdbeweging Merkem, Jeugd Merkem, Merkem, Katholieke Landelijke Jeugd, KLJ, vriendenkring Merkem, jongeren Merkem, activiteiten, Nacht Van De Dolle Koe'
+        />
+        <link rel='canonical' href='https://kljmerkem.be' />
+        <meta
+          property='og:title'
+          content='KLJ Merkem - Katholieke Landelijke Jeugd Merkem'
+        />
+        <meta
+          property='og:description'
+          content='KLJ Merkem is dé jeugdbeweging voor jongeren vanaf 16 jaar in Merkem. Sport, spel en ontspanning elke vrijdag.'
+        />
+        <meta property='og:url' content='https://kljmerkem.be' />
+      </Helmet>
       <div id='demo' className='carousel slide' data-bs-ride='carousel'>
         <div className='carousel-inner'>
           <div className='carousel-item active'>
@@ -47,7 +72,7 @@ const Home = () => {
         </button>
       </div>
       <div class='over mx-auto flyinleft'>
-        <h2>Over Ons</h2>
+        <h2>Over KLJ Merkem - Jeugdbeweging Merkem</h2>
         <p>
           Welkom bij KLJ Merkem! Sinds 1932 zijn wij de ideale plek voor
           jongeren vanaf 16 jaar om zich te vermaken en nieuwe vrienden te

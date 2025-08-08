@@ -1,10 +1,32 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./style.css";
 
 const Geschiedenis = () => {
   return (
     <div className='timeline-container flyinleft'>
-      <h1 className='text-center'>Geschiedenis</h1>
+      <Helmet>
+        <title>Geschiedenis KLJ Merkem - Van BJB tot KLJ sinds 1932</title>
+        <meta
+          name='description'
+          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1932. Van BoerenJeugdBond tot Katholieke Landelijke Jeugd, 90+ jaar jeugdbeweging in Merkem.'
+        />
+        <meta
+          name='keywords'
+          content='KLJ Merkem geschiedenis, BJB Merkem, Katholieke Landelijke Jeugd historie, BoerenJeugdBond, 1932 Merkem, 90 jaar KLJ'
+        />
+        <link rel='canonical' href='https://kljmerkem.be/#/geschiedenis' />
+        <meta
+          property='og:title'
+          content='Geschiedenis KLJ Merkem - 90+ jaar jeugdbeweging'
+        />
+        <meta
+          property='og:description'
+          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1932'
+        />
+        <meta property='og:url' content='https://kljmerkem.be/#/geschiedenis' />
+      </Helmet>
+      <h1 className='text-center'>Geschiedenis KLJ Merkem</h1>
       <ul class='timeline'>
         <li>
           <div class='direction-r'>

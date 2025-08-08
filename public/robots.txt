@@ -1,3 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /build/
+Disallow: /src/
+
+# Allow all content to be indexed
+Allow: /
+
+# Sitemap location
+Sitemap: https://kljmerkem.be/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

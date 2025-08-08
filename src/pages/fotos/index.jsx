@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "./style.css";
 import foto1 from "../../images/fotos/foto1.jpg";
 import foto2 from "../../images/fotos/foto2.jpg";
@@ -18,18 +19,54 @@ const Fotos = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const photos = [
-    { src: foto1, alt: "Foto 1" },
-    { src: foto2, alt: "Foto 2" },
-    { src: foto3, alt: "Foto 3" },
-    { src: foto4, alt: "Foto 4" },
-    { src: foto5, alt: "Foto 5" },
-    { src: foto6, alt: "Foto 6" },
-    { src: foto7, alt: "Foto 7" },
-    { src: foto8, alt: "Foto 8" },
-    { src: foto9, alt: "Foto 9" },
-    { src: foto10, alt: "Foto 10" },
-    { src: foto11, alt: "Foto 11" },
-    { src: foto12, alt: "Foto 12" },
+    {
+      src: foto1,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 1",
+    },
+    {
+      src: foto2,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 2",
+    },
+    {
+      src: foto3,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 3",
+    },
+    {
+      src: foto4,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 4",
+    },
+    {
+      src: foto5,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 5",
+    },
+    {
+      src: foto6,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 6",
+    },
+    {
+      src: foto7,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 7",
+    },
+    {
+      src: foto8,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 8",
+    },
+    {
+      src: foto9,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 9",
+    },
+    {
+      src: foto10,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 10",
+    },
+    {
+      src: foto11,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 11",
+    },
+    {
+      src: foto12,
+      alt: "KLJ Merkem foto - Jeugdbeweging Merkem activiteiten 12",
+    },
   ];
 
   useEffect(() => {
@@ -87,7 +124,28 @@ const Fotos = () => {
 
   return (
     <div className='container mt-5 flyinleft'>
-      <h1 className='text-center mb-5'>Galerij</h1>
+      <Helmet>
+        <title>Foto's KLJ Merkem - Galerij Jeugdbeweging Merkem</title>
+        <meta
+          name='description'
+          content="Bekijk de foto's van KLJ Merkem! Onze galerij toont de leukste momenten van de jeugdbeweging Merkem activiteiten en evenementen."
+        />
+        <meta
+          name='keywords'
+          content="KLJ Merkem foto's, galerij KLJ Merkem, jeugdbeweging Merkem foto's, Merkem activiteiten foto's, KLJ beelden"
+        />
+        <link rel='canonical' href='https://kljmerkem.be/#/fotos' />
+        <meta
+          property='og:title'
+          content="Foto's KLJ Merkem - Galerij Jeugdbeweging Merkem"
+        />
+        <meta
+          property='og:description'
+          content="Bekijk de foto's van KLJ Merkem! Onze galerij toont de leukste momenten."
+        />
+        <meta property='og:url' content='https://kljmerkem.be/#/fotos' />
+      </Helmet>
+      <h1 className='text-center mb-5'>Foto Galerij KLJ Merkem</h1>
 
       {/* Masonry Grid */}
       <div className='masonry-grid'>
