@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.f85fc46e.css",
-    "main.js": "/static/js/main.49aea6c2.js",
+    "main.css": "/static/css/main.6b8a0859.css",
+    "main.js": "/static/js/main.24c10153.js",
     "static/js/453.e2b6168c.chunk.js": "/static/js/453.e2b6168c.chunk.js",
-    "static/media/groepsfoto3.png": "/static/media/groepsfoto3.7f2728a68983434a22d6.png",
     "static/media/simon.jpg": "/static/media/simon.333b3c5c9aa9d367c47a.jpg",
+    "static/media/groepsfoto3.png": "/static/media/groepsfoto3.13114456f1fef39299d5.png",
+    "static/media/foto8.jpg": "/static/media/foto8.65d2824d87970615b319.jpg",
+    "static/media/groepsfoto5.jpg": "/static/media/groepsfoto5.db5364988b38ab9b5c09.jpg",
     "static/media/Cassie.jpg": "/static/media/Cassie.0acc244372c599db01b4.jpg",
     "static/media/tafelvoetbal.jpg": "/static/media/tafelvoetbal.81a01d6ecb9c7c9bf041.jpg",
+    "static/media/foto9.jpg": "/static/media/foto9.d314b40c765751a2b6c7.jpg",
     "static/media/groepsfoto.jpg": "/static/media/groepsfoto.6b1284dcd30967fe02ea.jpg",
     "static/media/Rosalie.jpg": "/static/media/Rosalie.2d9e428d2cb70bcabef9.jpg",
     "static/media/groepsfoto2.jpg": "/static/media/groepsfoto2.f27be73c0e753496c03e.jpg",
     "static/media/paintball.jpg": "/static/media/paintball.c9527622633493967375.jpg",
     "static/media/foto6.jpg": "/static/media/foto6.c334d8dd896e6cfd3135.jpg",
+    "static/media/foto7.jpg": "/static/media/foto7.53bb42a8fcc9da46e562.jpg",
+    "static/media/foto10.jpg": "/static/media/foto10.d776e5e13037d4bcd289.jpg",
     "static/media/foto4.jpg": "/static/media/foto4.eaa193e0c508b0bb6cb4.jpg",
     "static/media/foto3.jpg": "/static/media/foto3.b5e8fdf673f434150170.jpg",
     "static/media/bierfietsen.jpg": "/static/media/bierfietsen.a57184f62677dd7831c0.jpg",
+    "static/media/foto11.jpg": "/static/media/foto11.9c2e4a99db3644fe2575.jpg",
     "static/media/foto5.jpg": "/static/media/foto5.331f1b984f96e052eea7.jpg",
     "static/media/logo.png": "/static/media/logo.96bf190559a774ae1738.png",
     "static/media/dollekoe.jpg": "/static/media/dollekoe.608493970de31b32cd61.jpg",
+    "static/media/foto12.jpg": "/static/media/foto12.5622c22fc0b8e0015778.jpg",
     "static/media/kljcafé.jpg": "/static/media/kljcafé.874634a78061825a5603.jpg",
-    "static/media/Kelly.jpg": "/static/media/Kelly.82d43fac7fc255ca5d6a.jpg",
     "static/media/foto2.jpg": "/static/media/foto2.6f03ba5c76d0af72a827.jpg",
     "static/media/barbecue.jpg": "/static/media/barbecue.586dec04cf30270b82f4.jpg",
     "static/media/bowling.jpg": "/static/media/bowling.0da176566b5a12823211.jpg",
@@ -32,12 +38,12 @@
     "static/media/backer.jpg": "/static/media/backer.972f7789b203333622fd.jpg",
     "static/media/fb.png": "/static/media/fb.4f037d961598aff2a0a4.png",
     "index.html": "/index.html",
-    "main.f85fc46e.css.map": "/static/css/main.f85fc46e.css.map",
-    "main.49aea6c2.js.map": "/static/js/main.49aea6c2.js.map",
+    "main.6b8a0859.css.map": "/static/css/main.6b8a0859.css.map",
+    "main.24c10153.js.map": "/static/js/main.24c10153.js.map",
     "453.e2b6168c.chunk.js.map": "/static/js/453.e2b6168c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f85fc46e.css",
-    "static/js/main.49aea6c2.js"
+    "static/css/main.6b8a0859.css",
+    "static/js/main.24c10153.js"
   ]
 }

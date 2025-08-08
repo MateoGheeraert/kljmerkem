@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- KLJ Merkem - Homepage -->
+    <url>
+        <loc>https://kljmerkem.be</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- KLJ Merkem - Activiteiten -->
+    <url>
+        <loc>https://kljmerkem.be/activiteiten</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- KLJ Merkem - Evenementen -->
+    <url>
+        <loc>https://kljmerkem.be/evenementen</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- KLJ Merkem - Foto's -->
+    <url>
+        <loc>https://kljmerkem.be/fotos</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- KLJ Merkem - Bestuur -->
+    <url>
+        <loc>https://kljmerkem.be/bestuur</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- KLJ Merkem - Geschiedenis -->
+    <url>
+        <loc>https://kljmerkem.be/geschiedenis</loc>
+        <lastmod>2025-08-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
