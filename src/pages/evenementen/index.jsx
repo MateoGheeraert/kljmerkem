@@ -21,7 +21,7 @@ const Evenementen = () => {
           name='keywords'
           content='Nacht Van De Dolle Koe, KLJ Merkem evenementen, barbecue Merkem, KLJ Café, fuif Merkem, evenementen Merkem, jeugdbeweging evenementen'
         />
-        <link rel='canonical' href='https://kljmerkem.be/#/evenementen' />
+        <link rel='canonical' href='https://kljmerkem.be/evenementen' />
         <meta
           property='og:title'
           content='Evenementen KLJ Merkem - Nacht Van De Dolle Koe'
@@ -30,7 +30,7 @@ const Evenementen = () => {
           property='og:description'
           content='Ontdek de evenementen van KLJ Merkem: Nacht Van De Dolle Koe, barbecue en KLJ Café'
         />
-        <meta property='og:url' content='https://kljmerkem.be/#/evenementen' />
+        <meta property='og:url' content='https://kljmerkem.be/evenementen' />
       </Helmet>
       <h1 className='text-center'>Evenementen KLJ Merkem</h1>
       <div>

@@ -22,7 +22,7 @@ const Bestuur = () => {
           name='keywords'
           content='KLJ Merkem bestuur, bestuur jeugdbeweging Merkem, contact KLJ Merkem, bestuursleden Merkem, voorzitter KLJ Merkem'
         />
-        <link rel='canonical' href='https://kljmerkem.be/#/bestuur' />
+        <link rel='canonical' href='https://kljmerkem.be/bestuur' />
         <meta
           property='og:title'
           content='Bestuur KLJ Merkem - Contactgegevens'
@@ -31,7 +31,7 @@ const Bestuur = () => {
           property='og:description'
           content='Leer het bestuur van KLJ Merkem kennen! Contactgegevens van de bestuursleden.'
         />
-        <meta property='og:url' content='https://kljmerkem.be/#/bestuur' />
+        <meta property='og:url' content='https://kljmerkem.be/bestuur' />
       </Helmet>
       <div>
         <h1 className='text-center'>Bestuur KLJ Merkem</h1>

@@ -134,7 +134,7 @@ const Fotos = () => {
           name='keywords'
           content="KLJ Merkem foto's, galerij KLJ Merkem, jeugdbeweging Merkem foto's, Merkem activiteiten foto's, KLJ beelden"
         />
-        <link rel='canonical' href='https://kljmerkem.be/#/fotos' />
+        <link rel='canonical' href='https://kljmerkem.be/fotos' />
         <meta
           property='og:title'
           content="Foto's KLJ Merkem - Galerij Jeugdbeweging Merkem"
@@ -143,7 +143,7 @@ const Fotos = () => {
           property='og:description'
           content="Bekijk de foto's van KLJ Merkem! Onze galerij toont de leukste momenten."
         />
-        <meta property='og:url' content='https://kljmerkem.be/#/fotos' />
+        <meta property='og:url' content='https://kljmerkem.be/fotos' />
       </Helmet>
       <h1 className='text-center mb-5'>Foto Galerij KLJ Merkem</h1>
 

@@ -45,7 +45,7 @@ const Activiteiten = () => {
           name='keywords'
           content='KLJ Merkem activiteiten, karten Merkem, paintball, muurklimmen, bowling, bierfietsen, jeugdactiviteiten Merkem, sport Merkem, recreatie'
         />
-        <link rel='canonical' href='https://kljmerkem.be/#/activiteiten' />
+        <link rel='canonical' href='https://kljmerkem.be/activiteiten' />
         <meta
           property='og:title'
           content='Activiteiten KLJ Merkem - Sport en Ontspanning'
@@ -54,7 +54,7 @@ const Activiteiten = () => {
           property='og:description'
           content='Ontdek de leuke activiteiten van KLJ Merkem: karten, paintball, muurklimmen en meer!'
         />
-        <meta property='og:url' content='https://kljmerkem.be/#/activiteiten' />
+        <meta property='og:url' content='https://kljmerkem.be/activiteiten' />
       </Helmet>
       <header>
         <h1>Activiteiten KLJ Merkem</h1>

@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Layout from "./pages/Layout";
 import Home from "./pages/home";
@@ -13,7 +13,7 @@ import Geschiedenis from "./pages/geschiedenis";
 const App = () => {
   return (
     <HelmetProvider>
-      <HashRouter basename=''>
+      <BrowserRouter basename=''>
         <Layout>
           <Routes>
             <Route exact path='/' element={<Home />} />
@@ -25,7 +25,7 @@ const App = () => {
             <Route path='*' element={<Home />} />
           </Routes>
         </Layout>
-      </HashRouter>
+      </BrowserRouter>
     </HelmetProvider>
   );
 };
