@@ -1,52 +1,52 @@
 import React from "react";
-import groepsfoto from "../../images/groepsfoto.jpg";
-import groepsfoto2 from "../../images/groepsfoto2.jpg";
-import groepsfoto3 from "../../images/groepsfoto3.png";
+import groepsfoto from "../../images/groepsfotos/groepsfoto5.jpg";
+import groepsfoto2 from "../../images/groepsfotos/groepsfoto2.jpg";
+import groepsfoto3 from "../../images/groepsfotos/groepsfoto3.png";
 import "./style.css";
 
 const Home = () => {
   return (
     <div>
-      <div id="demo" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={groepsfoto3} alt="KLJ Merkem" className="d-block w-100" />
-            <div className="carousel-caption d-none d-md-block">
+      <div id='demo' className='carousel slide' data-bs-ride='carousel'>
+        <div className='carousel-inner'>
+          <div className='carousel-item active'>
+            <img src={groepsfoto3} alt='KLJ Merkem' className='d-block w-100' />
+            <div className='carousel-caption d-none d-md-block'>
               <h1>KLJ Merkem</h1>
             </div>
           </div>
-          <div className="carousel-item">
-            <img src={groepsfoto2} alt="KLJ Merkem" className="d-block w-100" />
-            <div className="carousel-caption d-none d-md-block">
+          <div className='carousel-item'>
+            <img src={groepsfoto2} alt='KLJ Merkem' className='d-block w-100' />
+            <div className='carousel-caption d-none d-md-block'>
               <h1>KLJ Merkem</h1>
             </div>
           </div>
-          <div className="carousel-item">
-            <img src={groepsfoto} alt="KLJ Merkem" className="d-block w-100" />
-            <div className="carousel-caption d-none d-md-block">
+          <div className='carousel-item'>
+            <img src={groepsfoto} alt='KLJ Merkem' className='d-block w-100' />
+            <div className='carousel-caption d-none d-md-block'>
               <h1>KLJ Merkem</h1>
             </div>
           </div>
         </div>
 
         <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="prev"
+          className='carousel-control-prev'
+          type='button'
+          data-bs-target='#demo'
+          data-bs-slide='prev'
         >
-          <span className="carousel-control-prev-icon"></span>
+          <span className='carousel-control-prev-icon'></span>
         </button>
         <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="next"
+          className='carousel-control-next'
+          type='button'
+          data-bs-target='#demo'
+          data-bs-slide='next'
         >
-          <span className="carousel-control-next-icon"></span>
+          <span className='carousel-control-next-icon'></span>
         </button>
       </div>
-      <div class="over mx-auto flyinleft">
+      <div class='over mx-auto flyinleft'>
         <h2>Over Ons</h2>
         <p>
           Welkom bij KLJ Merkem! Sinds 1932 zijn wij de ideale plek voor
