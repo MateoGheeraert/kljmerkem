@@ -8,25 +8,21 @@
 .gallery-item img,.event-photo img,.history>img{height:auto}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
-/* Homepage carousel: every slide uses the photos managed in Sanity. */
+/* Automatic photo carousel; no overlays or manual controls. */
 .carousel-slides,.carousel-slide{width:100%;height:100%;border-radius:inherit}
 .carousel-slide img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
-.carousel-controls{position:absolute;right:20px;bottom:24px;display:flex;align-items:center;gap:8px;padding:7px;background:#091a35e8;color:white;border-radius:30px;font-size:.8rem}
-.carousel-controls[hidden],.carousel-slide[hidden]{display:none}
-.carousel-controls button{width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:white;font-size:1.1rem}
-.carousel-controls button:hover{background:#ffffff26}
+.carousel-slide[hidden]{display:none}
 .event-schedule{font-weight:650;color:var(--ink);margin:0 0 12px}
 .event-date{display:block;font-size:.88rem;margin-bottom:12px;color:var(--muted)}
-/* Alternating vertical history timeline, collapsing to one track on mobile. */
-.history{max-width:1100px}
+/* An open timeline with a single vertical track and no cards or badges. */
+.history{max-width:1000px}
 .timeline{list-style:none;padding:0;margin:0;position:relative}
-.timeline:before{content:'';position:absolute;left:50%;top:20px;bottom:20px;width:3px;background:#c8d5ea;transform:translateX(-50%)}
-.timeline-entry{position:relative;width:50%;padding:0 38px 42px 0}
-.timeline-entry:nth-child(even){margin-left:50%;padding:0 0 42px 38px}
-.timeline-marker{position:absolute;width:18px;height:18px;background:var(--lime);border:4px solid var(--paper);box-shadow:0 0 0 2px var(--ink);border-radius:50%;right:-9px;top:28px}
-.timeline-entry:nth-child(even) .timeline-marker{left:-9px;right:auto}
-.timeline-card{background:#eef2f9;border:1px solid var(--line);padding:28px;border-radius:16px}
-.timeline-year{display:inline-block;background:var(--ink);color:var(--lime);font-weight:750;font-size:1.2rem;letter-spacing:.03em;padding:7px 14px;border-radius:6px;margin-bottom:18px}
-.timeline-card h2{font-size:1.5rem;margin-bottom:16px;line-height:1.25}
-.timeline-card .prose p{font-size:.95rem;margin-bottom:0}
-@media(max-width:700px){.timeline:before{left:9px}.timeline-entry,.timeline-entry:nth-child(even){width:100%;margin-left:0;padding:0 0 28px 42px}.timeline-marker,.timeline-entry:nth-child(even) .timeline-marker{left:0;right:auto}.timeline-card{padding:24px}.carousel-controls{right:12px;bottom:14px;gap:3px}.carousel .photo-stamp{left:12px;right:auto;bottom:14px;width:95px;height:95px;font-size:.6rem}.carousel .photo-stamp span{font-size:2rem}}
+.timeline:before{content:'';position:absolute;left:124px;top:16px;bottom:38px;width:2px;background:var(--line)}
+.timeline-entry{position:relative;padding:0 0 56px 170px;min-height:120px}
+.timeline-entry:last-child{padding-bottom:0}
+.timeline-marker{position:absolute;left:119px;top:12px;width:12px;height:12px;background:var(--lime);border:2px solid var(--ink);border-radius:50%}
+.timeline-card{padding:0;background:none;border:0;border-radius:0}
+.timeline-year{position:absolute;left:0;top:0;color:var(--ink);font-family:'Manrope',sans-serif;font-weight:750;font-size:1.65rem;letter-spacing:-.04em}
+.timeline-card h2{font-size:1.6rem;margin:0 0 14px;line-height:1.35}
+.timeline-card .prose p{font-size:1rem;margin-bottom:0;max-width:640px}
+@media(max-width:700px){.timeline:before{left:6px;top:14px;bottom:30px}.timeline-entry{padding:0 0 38px 36px}.timeline-marker{left:1px;top:10px}.timeline-year{position:static;display:block;font-size:1.4rem;margin-bottom:10px}.timeline-card h2{font-size:1.3rem}.timeline-card .prose p{font-size:.95rem}}

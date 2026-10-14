@@ -11,47 +11,25 @@ const slides = images.filter(image => image.asset);
       <SanityImage image={image} alt={s.name} width={1400} eager={i === 0} />
     </div>)}
   </div>
-  <div class="photo-stamp" aria-hidden="true">{s.name}<span>↗</span></div>
-  {slides.length > 1 && <div class="carousel-controls" hidden>
-    <button data-previous aria-label={s.labels.previous}>←</button>
-    <span data-position aria-live="off">1 / {slides.length}</span>
-    <button data-next aria-label={s.labels.next}>→</button>
-    <button data-play aria-label={s.labels.pauseCarousel} data-pause-label={s.labels.pauseCarousel} data-play-label={s.labels.playCarousel}>Ⅱ</button>
-  </div>}
 </section>
 <script>
   const carousel = document.querySelector<HTMLElement>('[data-carousel]');
   if (carousel) {
     const slides = [...carousel.querySelectorAll<HTMLElement>('[data-slide]')];
-    const controls = carousel.querySelector<HTMLElement>('.carousel-controls');
-    const play = carousel.querySelector<HTMLButtonElement>('[data-play]');
-    const position = carousel.querySelector<HTMLElement>('[data-position]');
-    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let current = 0;
-    let paused = motion.matches;
-    let hovered = false;
-    let focused = false;
     let timer: ReturnType<typeof setInterval> | undefined;
-    const show = (index: number) => {
-      current = (index + slides.length) % slides.length;
-      slides.forEach((slide, i) => { slide.hidden = i !== current; });
-      if (position) position.textContent = `${current + 1} / ${slides.length}`;
-    };
     const update = () => {
       clearInterval(timer);
-      if (play) { play.textContent = paused ? '▶' : 'Ⅱ'; play.setAttribute('aria-label', (paused ? play.dataset.playLabel : play.dataset.pauseLabel) || ''); }
-      if (slides.length > 1 && !paused && !hovered && !focused && !document.hidden) timer = setInterval(() => show(current + 1), 5000);
+      if (slides.length > 1 && !document.hidden) {
+        timer = setInterval(() => {
+          current = (current + 1) % slides.length;
+          slides.forEach((slide, index) => { slide.hidden = index !== current; });
+        }, 5000);
+      }
     };
-    if (controls) controls.hidden = false;
-    carousel.querySelector('[data-previous]')?.addEventListener('click', () => { show(current - 1); update(); });
-    carousel.querySelector('[data-next]')?.addEventListener('click', () => { show(current + 1); update(); });
-    play?.addEventListener('click', () => { paused = !paused; update(); });
-    carousel.addEventListener('mouseenter', () => { hovered = true; update(); });
-    carousel.addEventListener('mouseleave', () => { hovered = false; update(); });
-    carousel.addEventListener('focusin', () => { focused = true; update(); });
-    carousel.addEventListener('focusout', event => { if (!carousel.contains(event.relatedTarget as Node)) { focused = false; update(); } });
-    motion.addEventListener('change', () => { paused = motion.matches; update(); });
     document.addEventListener('visibilitychange', update);
+    window.addEventListener('pagehide', () => clearInterval(timer));
+    window.addEventListener('pageshow', update);
     update();
   }
 </script>
