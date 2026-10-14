@@ -14,3 +14,6 @@ export function formatDate(value) {
   if (!value || Number.isNaN(Date.parse(value))) return '';
   return new Intl.DateTimeFormat('nl-BE', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Brussels' }).format(new Date(value));
 }
+export function eventCategory(event, now = new Date()) {
+  return event.annualSchedule?.trim() ? 'recurring' : eventGroup(event.date, now);
+}

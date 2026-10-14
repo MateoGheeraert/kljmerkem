@@ -19,7 +19,7 @@ export interface Settings {
   labels: Record<string, string>;
 }
 export interface Activity { _id: string; title: string; description?: string; image?: SanityImage }
-export interface Event { _id: string; title: string; description?: PortableTextBlock[]; date?: string; location?: string; image?: SanityImage }
+export interface Event { _id: string; title: string; description?: PortableTextBlock[]; date?: string; annualSchedule?: string; location?: string; image?: SanityImage }
 export interface Member { _id: string; naam: string; taken?: string; telefoon?: string; foto?: SanityImage }
 export interface Content {
   settings: Settings;
@@ -42,7 +42,7 @@ export const query = defineQuery(`{
   "settings": *[_type == "siteSettings" && _id == "website-settings"][0]{name,tagline,heroTitle,heroIntro,membershipTitle,contactTitle,address,postalCity,email,copyright,analyticsId,logo,navigation,socialLinks,labels},
   "home": *[_type == "homeContent"] | order(_createdAt asc)[0]{title,metaDescription,carouselImages,aboutTitle,aboutContent,membershipInfo},
   "activities": *[_type == "activiteit"] | order(order asc, title asc){_id,title,description,image},
-  "events": *[_type == "evenement"] | order(date desc, title asc){_id,title,description,date,location,image},
+  "events": *[_type == "evenement"] | order(date desc, title asc){_id,title,description,date,annualSchedule,location,image},
   "members": *[_type == "bestuurslid"] | order(order asc, naam asc){_id,naam,taken,telefoon,foto},
   "history": *[_type == "geschiedenis"] | order(_createdAt asc)[0]{title,content,images},
   "gallery": *[_type == "photoGallery" && _id == "website-gallery"][0]{title,images}

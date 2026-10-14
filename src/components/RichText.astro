@@ -5,4 +5,4 @@ import RichLink from './RichLink.astro';
 interface Props { value?: PortableTextBlock[] }
 const { value } = Astro.props;
 ---
-{value?.length && <div class="prose"><PortableText value={value} components={{ mark: { link: RichLink } }} /></div>}
+{value && value.length > 0 && <div class="prose"><PortableText value={value} components={{ mark: { link: RichLink } }} /></div>}

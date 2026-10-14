@@ -1,0 +1,27 @@
+---
+import type { PortableTextBlock } from '@portabletext/types';
+import RichText from './RichText.astro';
+interface Props { blocks?: PortableTextBlock[] }
+const { blocks = [] } = Astro.props;
+const entries: { year: string; title: string; blocks: PortableTextBlock[] }[] = [];
+const introduction: PortableTextBlock[] = [];
+for (const block of blocks) {
+  if (block._type === 'block' && block.style === 'h2') {
+    const text = block.children.map(child => child.text || '').join('');
+    const match = text.match(/^(\d{4})\s*[—–-]\s*(.*)$/);
+    entries.push({ year: match?.[1] || '', title: match?.[2] || text, blocks: [] });
+  } else if (entries.length) entries[entries.length - 1].blocks.push(block);
+  else introduction.push(block);
+}
+---
+<RichText value={introduction} />
+<ol class="timeline">
+  {entries.map(entry => <li class="timeline-entry">
+    <span class="timeline-marker" aria-hidden="true"></span>
+    <article class="timeline-card">
+      {entry.year && <span class="timeline-year">{entry.year}</span>}
+      <h2>{entry.title}</h2>
+      <RichText value={entry.blocks} />
+    </article>
+  </li>)}
+</ol>

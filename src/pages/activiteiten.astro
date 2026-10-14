@@ -6,4 +6,4 @@ import { getContent } from '../lib/content';
 const { settings: s, activities } = await getContent();
 const page = s.navigation.find(p => p.path === '/activiteiten/')!;
 ---
-<Layout title={`${page.title} | ${s.name}`} description={page.description}><PageHeader page={page} /><section class="container section page-content"><div class="card-grid">{activities.map((activity, index) => <ActivityCard activity={activity} index={index} />)}</div>{!activities.length && <p class="empty-state">{s.labels.emptyActivities}</p>}</section></Layout>
+<Layout title={`${page.title} | ${s.name}`} description={page.description}><PageHeader page={page} /><section class="container section page-content"><div class="card-grid">{activities.map((activity) => <ActivityCard activity={activity} />)}</div>{!activities.length && <p class="empty-state">{s.labels.emptyActivities}</p>}</section></Layout>

@@ -44,7 +44,7 @@ const structured = { '@context': 'https://schema.org', '@type': 'Organization', 
     <a class="skip-link" href="#main">{s.labels.skip}</a>
     <header class="site-header">
       <div class="container nav-bar">
-        <a class="brand" href="/" aria-label={s.name}><img src={imageUrl(s.logo, 120)} width="58" height="58" alt="" /><span>{s.name}<small>{s.tagline}</small></span></a>
+        <a class="brand" href="/" aria-label={s.name}><img src={imageUrl(s.logo, 120)} width="58" height="58" alt="" /><span>{s.name}</span></a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">{s.labels.menu} <span aria-hidden="true">☰</span></button>
         <nav id="navigation" aria-label={s.labels.menu}>
           {s.navigation.map(link => <a href={safeHref(link.path)} aria-current={Astro.url.pathname === link.path ? 'page' : undefined}>{link.label}</a>)}
@@ -75,4 +75,3 @@ const structured = { '@context': 'https://schema.org', '@type': 'Organization', 
     </script>
   </body>
 </html>
-
