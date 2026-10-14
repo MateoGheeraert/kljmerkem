@@ -10,7 +10,7 @@ Open https://kljmerkem-website.sanity.studio/ and sign in with your existing San
 - **Activiteiten / Evenementen / Bestuur**: the existing prepared documents, including ordering, images and contact details.
 - **Evenementen → Jaarlijks moment**: enter an annual schedule, such as “Elke eerste zaterdag van april”. These events remain visible in the annual section. The optional “Datum volgende editie” appears alongside it only while that date is current or upcoming; no future dates are guessed.
 - **Home → carouselImages**: photos rotate automatically every five seconds without overlays or manual controls. Rotation stops while the browser tab is hidden and resumes when visible.
-- **Geschiedenis → content**: each Heading 2 starts a timeline milestone. Use “1932 — Oprichting BJB” for a separate year badge; following paragraphs belong to that milestone.
+- **Geschiedenis → content**: each Heading 2 starts a timeline milestone. Use “1935 — Oprichting BJB” for a separate year badge; following paragraphs belong to that milestone.
 - **Geschiedenis**: rich-text history, migrated from the previous website.
 - **Fotogalerij**: reorder, add or remove gallery images and edit their alternative text.
 - **Website instellingen**: logo, homepage headline, navigation labels, page headings, descriptions, contact details, social links and interface labels.

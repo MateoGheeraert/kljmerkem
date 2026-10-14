@@ -74,7 +74,7 @@ const Home = () => {
       <div class='over mx-auto flyinleft'>
         <h2>Over KLJ Merkem - Jeugdbeweging Merkem</h2>
         <p>
-          Welkom bij KLJ Merkem! Sinds 1932 zijn wij de ideale plek voor
+          Welkom bij KLJ Merkem! Sinds 1935 zijn wij de ideale plek voor
           jongeren vanaf 16 jaar om zich te vermaken en nieuwe vrienden te
           maken. KLJ, wat staat voor Katholieke Landelijke Jeugd, is een plek
           waar openheid, kameraadschap en plezier centraal staan. Bijna elke

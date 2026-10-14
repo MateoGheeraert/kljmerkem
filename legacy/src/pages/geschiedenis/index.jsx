@@ -6,14 +6,14 @@ const Geschiedenis = () => {
   return (
     <div className='timeline-container flyinleft'>
       <Helmet>
-        <title>Geschiedenis KLJ Merkem - Van BJB tot KLJ sinds 1932</title>
+        <title>Geschiedenis KLJ Merkem - Van BJB tot KLJ sinds 1935</title>
         <meta
           name='description'
-          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1932. Van BoerenJeugdBond tot Katholieke Landelijke Jeugd, 90+ jaar jeugdbeweging in Merkem.'
+          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1935. Van BoerenJeugdBond tot Katholieke Landelijke Jeugd, 90+ jaar jeugdbeweging in Merkem.'
         />
         <meta
           name='keywords'
-          content='KLJ Merkem geschiedenis, BJB Merkem, Katholieke Landelijke Jeugd historie, BoerenJeugdBond, 1932 Merkem, 90 jaar KLJ'
+          content='KLJ Merkem geschiedenis, BJB Merkem, Katholieke Landelijke Jeugd historie, BoerenJeugdBond, 1935 Merkem, 90 jaar KLJ'
         />
         <link rel='canonical' href='https://kljmerkem.be/geschiedenis' />
         <meta
@@ -22,7 +22,7 @@ const Geschiedenis = () => {
         />
         <meta
           property='og:description'
-          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1932'
+          content='Ontdek de rijke geschiedenis van KLJ Merkem sinds 1935'
         />
         <meta property='og:url' content='https://kljmerkem.be/geschiedenis' />
       </Helmet>
@@ -34,11 +34,11 @@ const Geschiedenis = () => {
               <span class='hexa'></span>
               <span class='flag'>Oprichting BJB</span>
               <span class='time-wrapper'>
-                <span class='time'>1932</span>
+                <span class='time'>1935</span>
               </span>
             </div>
             <div class='desc'>
-              In 1932 wordt de BoerenJeugdBond Merkem opgericht.
+              In 1935 wordt de BoerenJeugdBond Merkem opgericht.
             </div>
           </div>
         </li>
