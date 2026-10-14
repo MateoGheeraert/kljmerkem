@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SanityImage from '../components/SanityImage.astro';
+import RichText from '../components/RichText.astro';
+import ActivityCard from '../components/ActivityCard.astro';
+import { getContent } from '../lib/content';
+const { settings: s, home, activities } = await getContent();
+---
+<Layout title={home.title} description={home.metaDescription}>
+  <section class="hero container">
+    <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span>{s.tagline}</p><h1>{s.heroTitle}</h1><p class="intro">{s.heroIntro}</p><div class="button-row"><a class="button" href="#lid-worden">{s.labels.join}<span>↗</span></a><a class="text-link" href="/activiteiten/">{s.labels.activities} <span>→</span></a></div><p class="hero-note">{s.labels.since}</p></div>
+    <div class="hero-photo"><SanityImage image={home.carouselImages?.[0]} alt={s.name} width={1400} eager /><div class="photo-stamp" aria-hidden="true">{s.name}<span>↗</span></div></div>
+  </section>
+  <section class="about-band"><div class="container about-grid"><div><p class="eyebrow">{s.labels.since}</p><h2>{home.aboutTitle}</h2><a class="text-link" href="/geschiedenis/">{s.navigation.find(p => p.path === '/geschiedenis/')?.label} →</a></div><RichText value={home.aboutContent} /></div></section>
+  <section class="container section"><div class="section-heading"><div><p class="eyebrow">{s.navigation.find(p => p.path === '/activiteiten/')?.eyebrow}</p><h2>{s.labels.activities}</h2></div><a class="text-link" href="/activiteiten/">{s.labels.allActivities} →</a></div><div class="card-grid">{activities.slice(0, 3).map((activity, index) => <ActivityCard activity={activity} index={index} />)}</div></section>
+  <section class="container membership section" id="lid-worden"><div class="membership-photo"><SanityImage image={home.carouselImages?.[1] || home.carouselImages?.[0]} alt={s.name} width={1100} /></div><div class="membership-copy"><p class="eyebrow">{s.labels.membershipEyebrow}</p><h2>{s.membershipTitle}</h2><RichText value={home.membershipInfo} /><a class="button" href="/bestuur/">{s.labels.meetBoard} ↗</a></div></section>
+  {home.carouselImages?.[2] && <section class="container photo-banner"><SanityImage image={home.carouselImages[2]} alt={s.name} width={1800} /><a class="button button-light" href="/fotos/">{s.labels.allPhotos} ↗</a></section>}
+</Layout>

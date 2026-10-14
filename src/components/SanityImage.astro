@@ -1,0 +1,7 @@
+---
+import { imageUrl, type SanityImage } from '../lib/content';
+interface Props { image?: SanityImage; alt?: string; width?: number; eager?: boolean; class?: string; }
+const { image, alt = '', width = 960, eager = false, class: className } = Astro.props;
+const dimensions = image?.asset?._ref.match(/-(\d+)x(\d+)-/);
+---
+{image?.asset && <img src={imageUrl(image, width)} srcset={[400, 800, 1200, 1800].filter(w => w <= width * 2).map(w => `${imageUrl(image, w)} ${w}w`).join(', ')} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 900px" width={dimensions ? Number(dimensions[1]) : undefined} height={dimensions ? Number(dimensions[2]) : undefined} alt={image.alt || alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : 'auto'} decoding="async" class={className} />}

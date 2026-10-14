@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getContent } from '../lib/content';
+const { settings: s } = await getContent();
+---
+<Layout title={`404 | ${s.name}`} description={s.labels.notFoundText} noindex><section class="container page-header"><p class="eyebrow">404</p><h1>{s.labels.notFoundTitle}</h1><p class="intro">{s.labels.notFoundText}</p><a class="button" href="/">{s.labels.home} →</a></section></Layout>

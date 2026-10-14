@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SanityImage from '../components/SanityImage.astro';
+import { getContent, imageUrl } from '../lib/content';
+const { settings: s, gallery } = await getContent();
+const page = s.navigation.find(p => p.path === '/fotos/')!;
+---
+<Layout title={`${gallery.title} | ${s.name}`} description={page.description}><PageHeader page={{...page, title: gallery.title}} /><section class="container section page-content"><p class="gallery-hint">{s.labels.galleryHint}</p><div class="gallery">{gallery.images?.filter(image => image.asset).map((image, i) => <a class="gallery-item" href={imageUrl(image, 2048)} data-gallery data-alt={image.alt || `${s.name} ${i + 1}`}><SanityImage image={image} alt={`${s.name} ${i + 1}`} width={800} /><span aria-hidden="true">↗</span></a>)}</div>{!gallery.images?.length && <p class="empty-state">{s.labels.emptyGallery}</p>}</section>
+  <dialog class="lightbox" aria-label={s.labels.photos}><button class="lightbox-close" aria-label={s.labels.close}>×</button><button class="lightbox-prev" aria-label={s.labels.previous}>←</button><figure><img class="lightbox-image" alt="" /><figcaption aria-live="polite"></figcaption></figure><button class="lightbox-next" aria-label={s.labels.next}>→</button></dialog>
+  <script>
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-gallery]')];
+    const dialog = document.querySelector<HTMLDialogElement>('.lightbox')!;
+    const image = dialog.querySelector<HTMLImageElement>('img')!;
+    const caption = dialog.querySelector('figcaption')!;
+    let current = 0;
+    const show = (index: number) => { current = (index + links.length) % links.length; image.src = links[current].href; image.alt = links[current].dataset.alt || ''; caption.textContent = `${current + 1} / ${links.length} — ${image.alt}`; };
+    links.forEach((link, index) => link.addEventListener('click', event => { event.preventDefault(); show(index); dialog.showModal(); document.body.style.overflow = 'hidden'; }));
+    dialog.querySelector('.lightbox-close')?.addEventListener('click', () => dialog.close());
+    dialog.querySelector('.lightbox-prev')?.addEventListener('click', () => show(current - 1));
+    dialog.querySelector('.lightbox-next')?.addEventListener('click', () => show(current + 1));
+    dialog.addEventListener('close', () => { document.body.style.overflow = ''; links[current]?.focus(); });
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('keydown', event => { if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); } if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); } });
+  </script>
+</Layout>

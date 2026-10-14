@@ -10,6 +10,11 @@
 
 # production
 /build
+/dist
+/.astro
+/artifacts
+.env
+/content-state.json
 
 # misc
 .DS_Store

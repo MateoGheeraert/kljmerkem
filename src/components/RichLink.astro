@@ -1,0 +1,6 @@
+---
+import { safeHref } from '../lib/helpers.mjs';
+const { node } = Astro.props;
+const href = safeHref(node?.markDef?.href);
+---
+{href ? <a href={href}><slot /></a> : <span><slot /></span>}

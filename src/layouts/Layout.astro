@@ -1,0 +1,77 @@
+---
+import { getContent, imageUrl } from '../lib/content';
+import { safeHref } from '../lib/helpers.mjs';
+import '../styles/global.css';
+interface Props { title: string; description: string; noindex?: boolean }
+const { title, description, noindex = false } = Astro.props;
+const { settings: s, home } = await getContent();
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = imageUrl(home.carouselImages?.[0] || s.logo, 1200);
+const structured = { '@context': 'https://schema.org', '@type': 'Organization', name: s.name, url: Astro.site, logo: imageUrl(s.logo, 240), email: s.email, address: { '@type': 'PostalAddress', streetAddress: s.address, addressLocality: s.postalCity, addressCountry: 'BE' }, sameAs: s.socialLinks.map(link => safeHref(link.url)).filter(Boolean) };
+---
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#183e35" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={imageUrl(s.logo, 96)} />
+    <link rel="preconnect" href="https://cdn.sanity.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nl_BE" />
+    <meta property="og:site_name" content={s.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')} />
+    {s.analyticsId && /^G-[A-Z0-9]+$/.test(s.analyticsId) && <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${s.analyticsId}`} />
+      <script is:inline define:vars={{ analyticsId: s.analyticsId }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('config', analyticsId);
+      </script>
+    </>}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{s.labels.skip}</a>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="/" aria-label={s.name}><img src={imageUrl(s.logo, 120)} width="58" height="58" alt="" /><span>{s.name}<small>{s.tagline}</small></span></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">{s.labels.menu} <span aria-hidden="true">☰</span></button>
+        <nav id="navigation" aria-label={s.labels.menu}>
+          {s.navigation.map(link => <a href={safeHref(link.path)} aria-current={Astro.url.pathname === link.path ? 'page' : undefined}>{link.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div><a class="footer-brand" href="/">{s.name}<span aria-hidden="true">↗</span></a><p>{s.tagline}</p></div>
+        <div><h2>{s.contactTitle}</h2><address>{s.address}<br />{s.postalCity}</address><a href={`mailto:${s.email}`}>{s.email}</a></div>
+        <div class="social-links">{s.socialLinks.map(link => <a href={safeHref(link.url)} target="_blank" rel="noopener noreferrer">{link.label}<span aria-hidden="true">↗</span></a>)}</div>
+      </div>
+      <div class="container footer-bottom"><span>© {new Date().getFullYear()} {s.copyright}</span><a href="/#lid-worden">{s.labels.join} ↗</a></div>
+    </footer>
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#navigation');
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open)); nav?.classList.toggle('is-open', open);
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+          toggle.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); toggle.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

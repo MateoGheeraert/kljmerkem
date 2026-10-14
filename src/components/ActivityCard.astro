@@ -1,0 +1,10 @@
+---
+import type { Activity } from '../lib/content';
+import SanityImage from './SanityImage.astro';
+interface Props { activity: Activity; index?: number }
+const { activity, index = 0 } = Astro.props;
+---
+<article class="activity-card">
+  <div class:list={['card-image', { 'image-empty': !activity.image }]}><SanityImage image={activity.image} alt={activity.title} /><span class="card-number">{String(index + 1).padStart(2, '0')}</span></div>
+  <div class="card-body"><h2>{activity.title}</h2>{activity.description && <p>{activity.description}</p>}</div>
+</article>

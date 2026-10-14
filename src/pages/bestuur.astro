@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SanityImage from '../components/SanityImage.astro';
+import { getContent } from '../lib/content';
+const { settings: s, members } = await getContent();
+const page = s.navigation.find(p => p.path === '/bestuur/')!;
+---
+<Layout title={`${page.title} | ${s.name}`} description={page.description}><PageHeader page={page} /><section class="container section page-content"><div class="member-grid">{members.map(member => <article class="member-card"><div class="member-photo"><SanityImage image={member.foto} alt={member.naam} width={600} /></div><h2>{member.naam}</h2><p>{member.taken}</p>{member.telefoon && <a class="text-link" href={`tel:${member.telefoon.replace(/[^+\d]/g, '')}`}>{member.telefoon} ↗</a>}</article>)}</div>{!members.length && <p class="empty-state">{s.labels.emptyBoard}</p>}</section></Layout>

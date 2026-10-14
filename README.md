@@ -1,205 +1,57 @@
-# KLJ Merkem Website
+# KLJ Merkem
 
-The official website for KLJ Merkem (Katholieke Landelijke Jeugd Merkem). This project showcases the youth organization's activities, events, board members, photos, and history.
+Astro website at https://kljmerkem.be, hosted on GitHub Pages. All published site content and images are fetched from Sanity at build time. Visitors receive static HTML; no CMS token or frontend framework is shipped to the browser.
 
-🌐 **Live Website:** [https://kljmerkem.be](https://kljmerkem.be)
+## Edit content
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is hosted on GitHub Pages with a custom domain.
+Open https://kljmerkem-website.sanity.studio/ and sign in with your existing Sanity account.
 
-## Features
+- **Home**: introduction, membership information and homepage photos.
+- **Activiteiten / Evenementen / Bestuur**: the existing prepared documents, including ordering, images and contact details.
+- **Geschiedenis**: rich-text history, migrated from the previous website.
+- **Fotogalerij**: reorder, add or remove gallery images and edit their alternative text.
+- **Website instellingen**: logo, homepage headline, navigation labels, page headings, descriptions, contact details, social links and interface labels.
 
-- **Home Page**: Introduction to KLJ Merkem
-- **Activities**: Overview of all activities and programs
-- **Events**: Upcoming and past events
-- **Board Members**: Meet the current board
-- **Photo Gallery**: Collection of photos from activities and events
-- **History**: Learn about the organization's background
+Project: `z10tsa4x`. Dataset: `production`. Managed workspace: `website`.
+The original Studio remains available and edits the same documents. Use the new Studio for the added gallery and settings types. The empty project `9uexmhie` is unused.
 
-## Available Scripts
+Publish changes in Sanity to make them eligible for the next build. Drafts never appear on the public site. Do not change the six navigation paths: these correspond to Astro routes. Keep the singleton documents `website-settings`, `website-gallery` and `website-history` rather than creating duplicates. `sanity/schema.declaration.txt` records the managed schema; schema changes must be deployed to the `website` workspace and the managed Studio redeployed with the Sanity plugin.
 
-In the project directory, you can run:
+## Local development
 
-### `npm start`
+Use Node.js 24 (minimum 22.12).
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-## Deployment to GitHub Pages
-
-This website is hosted on GitHub Pages with a custom domain (kljmerkem.be). Here's how to deploy:
-
-### Prerequisites
-
-1. Install the `gh-pages` package as a dev dependency:
-
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. Add the following scripts to your `package.json`:
-   ```json
-   {
-     "scripts": {
-       "predeploy": "npm run build",
-       "deploy": "gh-pages -d build"
-     },
-     "homepage": "https://kljmerkem.be"
-   }
-   ```
-
-### Deployment Steps
-
-1. **Build and Deploy to GitHub Pages:**
-
-   ```bash
-   npm run deploy
-   ```
-
-   This command will:
-
-   - Run `npm run build` to create the production build
-   - Deploy the build folder to the `gh-pages` branch
-   - Make it available at your GitHub Pages URL
-
-2. **Configure Custom Domain:**
-
-   - In your GitHub repository, go to Settings → Pages
-   - Under "Custom domain", enter: `kljmerkem.be`
-   - Make sure "Enforce HTTPS" is checked
-   - GitHub will create a CNAME file in your `gh-pages` branch
-
-3. **DNS Configuration:**
-   - Configure your domain's DNS settings to point to GitHub Pages:
-     - Create a CNAME record pointing `www.kljmerkem.be` to `your-username.github.io`
-     - Create A records for the apex domain pointing to GitHub Pages IPs:
-       - `185.199.108.153`
-       - `185.199.109.153`
-       - `185.199.110.153`
-       - `185.199.111.153`
-
-### Automated Deployment (Optional)
-
-For automatic deployment on every push to the main branch, you can set up a GitHub Action:
-
-1. Create `.github/workflows/deploy.yml`:
-
-   ```yaml
-   name: Deploy to GitHub Pages
-
-   on:
-     push:
-       branches: [main]
-
-   jobs:
-     build-and-deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Checkout
-           uses: actions/checkout@v2
-
-         - name: Setup Node.js
-           uses: actions/setup-node@v2
-           with:
-             node-version: "16"
-
-         - name: Install dependencies
-           run: npm ci
-
-         - name: Build
-           run: npm run build
-
-         - name: Deploy
-           uses: peaceiris/actions-gh-pages@v3
-           with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./build
-             cname: kljmerkem.be
-   ```
-
-### Manual Deployment Commands
-
-```bash
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
-
-# Deploy to GitHub Pages
-npm run deploy
+```sh
+npm ci
+npm run dev
+npm run verify
+npm run preview
 ```
 
-## Project Structure
+`verify` runs Astro/TypeScript diagnostics, tests for link safety and Belgian event dates, builds against published Sanity content, and checks generated routes, local links, metadata, 404, sitemap and custom domain. No access token is required for this public dataset. Optional project overrides are documented in `.env.example`.
 
-```
-src/
-├── components/          # Reusable React components
-│   ├── activiteit/     # Activity components
-│   ├── bestuurslid/    # Board member components
-│   ├── event/          # Event components
-│   ├── footer/         # Footer component
-│   └── navbar/         # Navigation component
-├── images/             # Static images and media
-├── pages/              # Main page components
-│   ├── activiteiten/   # Activities page
-│   ├── bestuur/        # Board page
-│   ├── evenementen/    # Events page
-│   ├── fotos/          # Photos page
-│   ├── geschiedenis/   # History page
-│   ├── home/           # Home page
-│   └── Layout/         # Layout wrapper
-├── App.js              # Main app component with routing
-└── index.js            # Entry point
-```
+## Deployment and content updates
 
-## Technologies Used
+`.github/workflows/deploy.yml` builds and deploys with GitHub Actions. GitHub Pages must use **GitHub Actions** as its source and retain `kljmerkem.be` as the custom domain.
 
-- **React** - JavaScript library for building user interfaces
-- **React Router** - Declarative routing for React
-- **React Helmet Async** - Document head management
-- **CSS3** - Styling and animations
-- **GitHub Pages** - Static site hosting
-- **Custom Domain** - kljmerkem.be
+- Push to `main`: validates and deploys the website.
+- Sanity content: checked hourly at minute 17. Only changed published content or a new Belgian calendar day triggers a rebuild. GitHub may delay scheduled runs.
+- Immediate update: GitHub repository → Actions → Deploy Astro to GitHub Pages → Run workflow.
+- Optional external integration: authenticated `repository_dispatch` with event type `sanity-publish` also triggers deployment. No webhook credential is embedded in this repository.
 
-## Contributing
+Build failures preserve the existing deployment. Event dates are formatted and grouped in Europe/Brussels. Events without dates have their own section; elapsed events appear under past events. Scheduled daily date changes keep that grouping current.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## Structure
 
-## Learn More
+- `src/pages`: six original routes, a real 404 page and generated sitemap.
+- `src/lib/content.ts`: published-only GROQ queries, types and Sanity image URLs.
+- `src/components`, `src/layouts`, `src/styles`: shared Astro templates and responsive styles.
+- `static`: CNAME, robots and no-Jekyll marker.
+- `legacy`: preserved CRA source and public files, including the pre-existing local HTML formatting change; excluded from the new build and deployment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The browser JavaScript handles the mobile menu and accessible gallery dialog. Gallery images remain usable as ordinary links without JavaScript. Images come from Sanity's CDN with responsive sizes. The original Google Analytics measurement ID is retained in Sanity settings and can be removed there.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## References
 
-## Troubleshooting
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### GitHub Pages Deployment Issues
-
-- Make sure your repository is public or you have GitHub Pro for private repo Pages
-- Check that the `gh-pages` branch exists and contains your built files
-- Verify your custom domain DNS settings
-- Ensure HTTPS is enforced in repository settings
+[Astro GitHub Pages deployment](https://docs.astro.build/en/guides/deploy/github/)
+[Sanity JavaScript client](https://www.sanity.io/docs/js-client)
