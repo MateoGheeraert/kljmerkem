@@ -38,7 +38,9 @@ npm run preview
 `.github/workflows/deploy.yml` builds and deploys with GitHub Actions. GitHub Pages must use **GitHub Actions** as its source and retain `kljmerkem.be` as the custom domain.
 
 - Push to `main`: validates and deploys the website.
-- Sanity content: checked every five minutes (minutes 2, 7, 12, etc.). Only changed published content or a new Belgian calendar day triggers a rebuild. Allow about a minute for the build after a check; GitHub may delay scheduled runs, so this is not a guaranteed publishing deadline.
+- Sanity publishing webhook: published changes in the production dataset trigger `deploy.yml` through GitHub's workflow-dispatch API. Draft edits and release versions are excluded. Allow about one to two minutes for deployment, subject to GitHub queue delays.
+- Daily fallback: checks at 03:17 UTC keep event date grouping current and recover any missed webhook. There is no five-minute polling.
+- Webhook authentication: a dedicated fine-grained GitHub token restricted to this repository, with Actions read/write and required Metadata read access, is stored in Sanity's webhook header. It has no expiration; revoke or replace it in GitHub if needed. Never store the token in this repository or public Sanity documents.
 - Immediate update: GitHub repository → Actions → Deploy Astro to GitHub Pages → Run workflow.
 - Optional external integration: authenticated `repository_dispatch` with event type `sanity-publish` also triggers deployment. No webhook credential is embedded in this repository.
 
